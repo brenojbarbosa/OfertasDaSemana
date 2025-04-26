@@ -1,54 +1,20 @@
-# React + TypeScript + Vite
+# Ofertas da Semana
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O projeto **Ofertas da Semana** é um site desenvolvido para exibir ofertas de produtos de supermercado. Ele permite filtrar as ofertas por categoria, adicionar produtos ao carrinho, e finalizar a compra via WhatsApp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- **Cadastro de Ofertas**: Funcionalidade para cadastrar novas ofertas de produtos no sistema.
+- **Filtro por Categoria**: As ofertas podem ser filtradas por categorias como Alimentos, Bebidas, Higiene, Limpeza, e Outros.
+- **Carrinho de Compras**: Permite adicionar produtos ao carrinho, visualizar o total e remover itens.
+- **Envio de Pedidos via WhatsApp**: Ao finalizar a compra, o usuário pode enviar o pedido para o WhatsApp, com os itens selecionados e o total.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **React Bootstrap**: Biblioteca para implementar componentes de interface com Bootstrap.
+- **React Router**: Gerenciamento de navegação entre as páginas do aplicativo.
+- **FontAwesome**: Ícones para complementar o design da interface.
