@@ -1,0 +1,43 @@
+
+body {
+    background-color: #55423d;
+    color: #fff3ec;
+   font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  .btn-custom {
+    background-color: #a97155;
+    color: #fff3ec;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #8b5e3c;
+    color: #ffffff;
+  }
+  
+ 
+  .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+ 
+  .container {
+    max-width: 960px;
+  }
+  
+
+  h1 {
+    color: #fffcf2;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
