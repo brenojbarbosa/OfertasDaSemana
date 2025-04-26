@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button, Offcanvas } from 'react-bootstrap'
 import { FaShoppingCart, FaPlus, FaTrash } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
+
 type Oferta = {
   id: number
   nome: string
