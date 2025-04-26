@@ -30,7 +30,7 @@ const App = () => {
   useEffect(() => {
     const carregarOfertas = async () => {
       try {
-        const response = await fetch('/ofertas.json')
+        const response = await fetch('./ofertas.json')
         const ofertasJson = await response.json()
         const ofertasLocalStorage = JSON.parse(localStorage.getItem('ofertas') || '[]')
         setOfertas([...ofertasJson, ...ofertasLocalStorage])
