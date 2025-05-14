@@ -3,6 +3,7 @@
     "id": 1,
     "nome": "Arroz 5kg",
     "preco": 20.99,
+    "promocao": 17.99,
     "descricao": "Arroz tipo 1, 5kg",
     "imagem": "/images/arroz.jpeg",
     "categoria": "Alimentos"
@@ -11,6 +12,7 @@
     "id": 2,
     "nome": "Cerveja Lata 350ml",
     "preco": 3.50,
+    "promocao": 2.99,
     "descricao": "Cerveja gelada, 350ml",
     "imagem": "/images/cerveja.webp",
     "categoria": "Bebidas"
@@ -19,6 +21,7 @@
     "id": 3,
     "nome": "Sabão em pó 1kg",
     "preco": 7.99,
+    "promocao": 6.49,
     "descricao": "Sabão em pó para lavar roupas",
     "imagem": "/images/sabao.webp",
     "categoria": "Limpeza"
@@ -35,6 +38,7 @@
     "id": 5,
     "nome": "Feijão 1kg",
     "preco": 9.90,
+    "promocao": 8.49,
     "descricao": "Feijão carioca, 1kg",
     "imagem": "/images/feijao.jpeg",
     "categoria": "Alimentos"
@@ -59,6 +63,7 @@
     "id": 8,
     "nome": "Refrigerante 2L",
     "preco": 6.49,
+    "promocao": 5.49,
     "descricao": "Refrigerante sabor cola, 2 litros",
     "imagem": "/images/refrigerante.jpg",
     "categoria": "Bebidas"

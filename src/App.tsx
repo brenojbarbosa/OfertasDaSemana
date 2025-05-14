@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Container, Row, Col, Form, Button, Offcanvas } from 'react-bootstrap'
-import { FaShoppingCart, FaPlus, FaTrash } from 'react-icons/fa'
+import { FaShoppingCart, FaPlus } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
-
 
 type Oferta = {
   id: number
@@ -100,11 +99,11 @@ const App = () => {
   }
 
   return (
-    <Container className="py-0 px-0" fluid>
-      <div style={{ backgroundColor: '#ffc0ad', color: '#000' }} className="py-3 px-4 d-flex justify-content-between align-items-center">
+    <Container className="py- px-0" fluid>
+      <div style={{ backgroundColor: '#000', color: '#FFD700' }} className="py-5 px-4 d-flex justify-content-between align-items-center">
         <h1 className="m-0">Ofertas da Semana</h1>
         <Button
-          style={{ backgroundColor: '#9656a1', borderColor: '#9656a1' }}
+          style={{ backgroundColor: '#FFD700', borderColor: '#FFD700', color: '#000' }}
           onClick={() => navigate('/cadastro-oferta')}
         >
           <FaPlus className="me-2" />
@@ -117,7 +116,7 @@ const App = () => {
           <Form.Select
             value={categoriaSelecionada}
             onChange={(e) => setCategoriaSelecionada(e.target.value)}
-            style={{ borderColor: '#9656a1', borderRadius: '0.5rem', boxShadow: 'none' }}
+            style={{ borderColor: '#FFD700', borderRadius: '0.5rem', boxShadow: 'none' }}
           >
             <option value="">Filtrar por categoria</option>
             <option value="Alimentos">Alimentos</option>
@@ -134,7 +133,7 @@ const App = () => {
           ) : (
             ofertasFiltradas.map((oferta) => (
               <Col key={oferta.id} sm={6} md={4} lg={3} className="mb-4 d-flex justify-content-center">
-                <div className="card h-100 w-100 d-flex flex-column">
+                <div className="card h-100 w-100 d-flex flex-column" style={{ backgroundColor: '#111', color: '#fff' }}>
                   <img
                     src={oferta.imagem}
                     className="card-img-top"
@@ -150,18 +149,19 @@ const App = () => {
                     <h5 className="card-title">{oferta.nome}</h5>
                     <p className="card-text flex-grow-1">{oferta.descricao}</p>
                     <p className="card-text fw-bold">R$ {oferta.preco.toFixed(2)}</p>
-                    <div className="d-flex justify-content-between mt-2">
+                    <div className="d-flex justify-content-center">
                       <Button
-                        style={{ backgroundColor: '#9656a1', borderColor: '#9656a1' }}
+                        style={{
+                          backgroundColor: '#FFD700',
+                          borderColor: '#FFD700',
+                          color: '#000',
+                          display: 'flex',
+                          alignItems: 'center'
+                        }}
                         onClick={() => adicionarAoCarrinho(oferta)}
                       >
+                        <FaShoppingCart className="me-2" />
                         Adicionar
-                      </Button>
-                      <Button
-                        variant="danger"
-                        onClick={() => excluirOferta(oferta.id)}
-                      >
-                        <FaTrash />
                       </Button>
                     </div>
                   </div>
@@ -172,7 +172,10 @@ const App = () => {
         </Row>
 
         <div className="position-fixed bottom-0 end-0 p-3">
-          <Button style={{ backgroundColor: '#9656a1', borderColor: '#9656a1' }} onClick={() => setShowCarrinho(true)}>
+          <Button
+            style={{ backgroundColor: '#FFD700', borderColor: '#FFD700', color: '#000' }}
+            onClick={() => setShowCarrinho(true)}
+          >
             <FaShoppingCart /> {totalItensCarrinho} Itens
           </Button>
         </div>
@@ -211,7 +214,7 @@ const App = () => {
                   className="mb-2"
                 />
                 <Button
-                  style={{ backgroundColor: '#9656a1', borderColor: '#9656a1' }}
+                  style={{ backgroundColor: '#FFD700', borderColor: '#FFD700', color: '#000' }}
                   className="w-100"
                   onClick={enviarParaWhatsApp}
                 >
@@ -222,7 +225,7 @@ const App = () => {
 
             {!mostrarCampoNumero && (
               <Button
-                style={{ backgroundColor: '#9656a1', borderColor: '#9656a1' }}
+                style={{ backgroundColor: '#FFD700', borderColor: '#FFD700', color: '#000' }}
                 className="w-100 mt-3"
                 onClick={finalizarCompra}
                 disabled={carrinho.length === 0}
