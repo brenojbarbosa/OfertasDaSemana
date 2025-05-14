@@ -1,4 +1,6 @@
 # Ofertas da Semana
+![image](https://github.com/user-attachments/assets/06111189-d123-4681-92b0-73f4598d93ee)
+
 
 ## Descrição
 
